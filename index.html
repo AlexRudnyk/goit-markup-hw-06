@@ -108,8 +108,20 @@
                 ></textarea>
               </label>
               <label class="modal-label-check">
-                <input type="checkbox" class="modal-input-check" name="user-check" />
-                <span class="check-text">Соглашаюсь с рассылкой и принимаю <a class="check-text-link" href="">Условия договора</a></span>
+                <input
+                  type="checkbox"
+                  class="modal-input-check visually-hidden"
+                  name="user-check"
+                />
+                <span class="custom-checkbox">
+                  <svg class="icon-check" width="16" height="15">
+                    <use href="./images/sprite.svg#icon-check"></use>
+                  </svg>
+                </span>
+                <span class="check-text"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a class="check-text-link" href="">Условия договора</a></span
+                >
               </label>
               <button class="btn modal-form-btn" type="submit">Отправить</button>
             </form>

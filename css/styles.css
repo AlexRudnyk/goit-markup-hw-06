@@ -365,11 +365,32 @@ a {
 
 .modal-label-check {
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
 }
 
-.modal-input-check {
+.custom-checkbox {
+  width: 16px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary-text-color);
   margin-right: 9px;
+  border-radius: 2px;
+}
+
+.icon-check {
+  opacity: 0;
+}
+
+.modal-input-check:checked + .custom-checkbox {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.modal-input-check:checked + .custom-checkbox .icon-check {
+  opacity: 1;
 }
 
 .check-text {
