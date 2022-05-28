@@ -177,36 +177,11 @@ a {
   text-transform: uppercase;
 }
 
-.scale-up-hor-center {
-  -webkit-animation: scale-up-hor-center 500ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-hor-center 500ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-@-webkit-keyframes scale-up-hor-center {
-  0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-}
-@keyframes scale-up-hor-center {
-  0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-}
-
 .btn {
   width: 200px;
   height: 50px;
   border-radius: 4px;
+  border-color: transparent;
   cursor: pointer;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -697,6 +672,10 @@ a {
   color: var(--accent-color);
 }
 
+.footer-join {
+  margin-right: 93px;
+}
+
 .footer-join-title {
   font-weight: var(--primary-font-weight);
   font-size: 14px;
@@ -714,6 +693,59 @@ a {
 .socials-link.bg:hover,
 .socials-link.bg:focus {
   background-color: var(--accent-color);
+}
+
+.footer-form-label {
+  margin-bottom: 20px;
+}
+
+.footer-form-title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-form-wrapper {
+  display: flex;
+}
+
+.footer-form-mail {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  width: 358px;
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-form-mail::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-mail:not(:placeholder-shown) {
+  color: #ffffff;
+}
+
+.footer-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-btn-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-right: 10px;
 }
 
 /* Portfolio Styles */

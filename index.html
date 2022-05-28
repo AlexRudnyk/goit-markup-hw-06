@@ -57,7 +57,7 @@
       <!-- Секция Герой -->
       <section class="hero">
         <div class="hero-container">
-          <h1 class="hero-title scale-up-hor-center">
+          <h1 class="hero-title">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
@@ -646,6 +646,26 @@
             </li>
           </ul>
         </div>
+        <form class="modal-form" name="footer-form">
+            <label class="footer-form-label" for="footer-form-mail">
+              <span class="footer-form-title">Подпишитесь на рассылку</span>
+            </label>
+            <div class="footer-form-wrapper">
+            <input
+              type="email"
+              class="footer-form-mail"
+              name="footer-form-mail"
+              placeholder="E-mail"
+              id="footer-form-mail"
+            />
+            <button class="btn footer-form-btn" type="submit">
+              <span class="footer-btn-text">Подписаться</span>
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/sprite.svg#subscribe"></use>
+              </svg>
+            </button>
+            </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
